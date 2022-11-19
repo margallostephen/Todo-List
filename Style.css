@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+}
+
+body {
+  background: #e4d57a;
+}
+
+#container {
+  background: white;
+  max-width: 360px;
+  margin: 75px auto;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+#inputField {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border: 2px solid;
+  border-radius: 8px;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input:focus {
+  border: 2px solid #0cc05d;
+  transition: all 0.3s ease-in-out;
+}
+
+#addButton {
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  border: none;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 1rem;
+  background: #15c441;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+
+#taskLabel {
+  border-bottom: 5px solid;
+  margin: 15px 0 10px 0;
+  font-size: 23px;
+  display: none;
+}
+
+ul {
+  max-height: 780px;
+  overflow-y: auto;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  line-height: 20px;
+  border-radius: 3px;
+  padding: 14px 115px 14px 0;
+  cursor: default;
+  word-wrap: break-word;
+  text-align: justify;
+  margin-left: 10px;
+}
+
+.editTaskInput {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #0cc05d;
+  border-radius: 8px;
+  width: 104%;
+  outline: none;
+  overflow-y: hidden;
+  resize: none;
+  display: none;
+}
+
+.editMode .editTaskInput {
+  display: block;
+}
+
+.editMode label {
+  display: none;
+}
+
+li button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  font-size: 10.8px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.editButton {
+  top: 50%;
+  left: 74%;
+  width: 37px;
+  background: #0cc05d;
+}
+
+.deleteButton {
+  top: 50%;
+  left: 90%;
+  background: #de3416;
+}
+
+.deleteButton:disabled {
+  display: none;
+}
